@@ -56,11 +56,14 @@ h6{
 }
 
 #nav-row{
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background-color: #231f20;
 }
 
 #misc-row{
-    background-color: lightgreen;
+    text-align: right;
+    background-color: #ffde00;
+    padding: 4px 0;
 }
 
 .container{
@@ -161,4 +164,54 @@ nav>li>a:hover{
 #smi-container ul li ion-icon{
     font-size: 1.2rem;
     color: white;
+}
+
+
+#nav-row>div>nav li  {
+
+    float: left;   
+}
+
+
+#nav-row>div>nav li a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+
+
+#nav-row>div>nav li a:hover{
+    background-color: #ff9d1e;
+    text-decoration: none;
+}
+
+#nav-row>div>nav li a:hover:after{
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 10px solid  #ff9d1e;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+
+#misc-row div button{
+    display: inline-block;
+    color: white;
+    border-bottom: 2px solid #107ece;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #3f4da1;
+    line-height: 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+
+
+}
+#misc-row div button:hover{
+    background-color: #0865a9;
 }
