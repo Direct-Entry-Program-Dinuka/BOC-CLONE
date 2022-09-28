@@ -625,57 +625,87 @@ main>.row:nth-child(3)>.container>.col .topic{
 /* --------------------------------------------- */
 
 main>.row:last-child{
-    padding: 20px;
+    padding-bottom: 10px;
 }
+
 main>.row:last-child>.container>.col{
     float: left;
 }
 
 main>.row:last-child>.container>.col:first-child,
 main>.row:last-child>.container>.col:last-child{
+    padding: 10px;
     width: 25%;
-    background-color: red;
-    height: 100%;
+    text-align :right;
+    color: #1f1f1f;
 }
+
+main>.row:last-child>.container>.col:first-child>p:first-of-type,
+main>.row:last-child>.container>.col:last-child>p:first-of-type{
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+main>.row:last-child>.container>.col:first-child>p:last-of-type{
+    font-size: 20px;
+}
+
+main>.row:last-child>.container>.col:first-child>p:last-of-type ion-icon{
+    color: #8a8a8a;
+    padding-right: 15px;
+}
+
 main>.row:last-child>.container>.col:nth-child(2){
     width: 50%;
-    background-color: green;
-    height: 100%;
+    text-align: center;
+    padding-top: 13px;
+}
+
+main>.row:last-child>.container>.col:last-child>p:last-of-type{
+    font-size: 0.7rem;
+    color: #8a8a8a;
 }
 
 /* -------------------------------------------- */
 
 #popup{
     position: fixed;
-    left: 10px;
-    bottom: 40px;
-    width: 450px;
-    background-color: #8a8a8a;
+    left: 50px;
+    bottom: 340px;
+    width: 250px;
+    background-color: #8a8a8aef;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 6px 1px #000000ab;
 }
 
 #close-wrapper{
+    font-size: 25px;
+    color: rgb(54, 14, 14);
+    font-weight: bold;
     position: absolute;
+    /* right: 10px; */
     padding: 5px 0;
     cursor: pointer;
 }
 
 #close-wrapper:hover{
-    color: white
+    color: white;
 }
 
-#popup{
-    padding-top: 35px;
+#popup p{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding-top: 50px;
+    text-align: justify;
 }
 
 #close-wrapper ion-icon{
     vertical-align: sub;
-    padding-right: 5px;
-    background-color: red;
+    margin-right: 5px;
+    background-color: rgb(255, 94, 0);
     border-radius: 100%;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 
