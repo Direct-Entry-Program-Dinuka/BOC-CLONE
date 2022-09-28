@@ -685,8 +685,8 @@ main>.row:last-child>.container>.col:last-child>p:last-of-type{
     width: 250px;
     background-color: #8a8a8aef;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 1px #000000ab;
+    border-radius: 5px solid red;
+    box-shadow: 0 0 6px 1px #ff0000ab;
 }
 
 #close-wrapper{
@@ -704,7 +704,8 @@ main>.row:last-child>.container>.col:last-child>p:last-of-type{
 }
 
 #popup p{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-style: normal;
     line-height: 1.2rem;
     padding-top: 50px;
     text-align: justify;
