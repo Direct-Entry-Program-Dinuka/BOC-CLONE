@@ -434,7 +434,7 @@ main>.row:nth-child(2)>.container>.col:first-child{
 
 main>.row:nth-child(2)>.container>.col:last-child{
     width: 25%;
-    background-color: red;
+    /* background-color: red; */
     
 }
 
