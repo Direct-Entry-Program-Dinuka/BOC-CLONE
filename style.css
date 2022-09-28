@@ -486,17 +486,19 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
     margin-top: 20px;
     padding: 0 10px;
     height: 388px;
-    overflow-y: hidden;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .slide{
+    scroll-snap-align: center;
     position: absolute;
     background-repeat: no-repeat;
     height: 388px;
     background-size:contain;
     background-position: center;
     width: 100%;
-    
 }
 
 #slider-1{
@@ -546,3 +548,30 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
      color: white;
      vertical-align: sub;
 }
+
+#slider-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-animations;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes slider-animations{
+    0%, 12%{
+        left: 0;
+    }
+    25%, 37%{
+        left: -100%;
+    }
+    50%, 62%{
+        left: -200%;
+    }
+    75%, 87%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+
+/* ----------------------------------------- */
