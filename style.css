@@ -482,33 +482,38 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
 /* ------------------------------------------- */
 
 #slider{
-    padding: 10px 10px 0;
+    position: relative;
+    margin-top: 20px;
+    padding: 0 10px;
     height: 388px;
     overflow-y: hidden;
 }
 
 .slide{
-    position: relative;
+    position: absolute;
     background-repeat: no-repeat;
     height: 388px;
     background-size:contain;
     background-position: center;
-    float: left;
     width: 100%;
+    
 }
 
 #slider-1{
     background-image: url(https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg);
 }
 #slider-2{
+    left: 100%;
     background-image: url(https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg);
 }
 
 #slider-3{
+    left: 200%;
     background-image: url(https://boc.lk/image/data/Banner/SDA-2022-09.jpeg);
 }
 
 #slider-4{
+    left: 300%;
     background-image: url(https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg);
 }
 
