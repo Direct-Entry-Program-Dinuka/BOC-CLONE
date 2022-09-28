@@ -575,3 +575,125 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
 }
 
 /* ----------------------------------------- */
+
+main>.row:nth-child(3){
+    padding: 20px 0;
+}
+main>.row:nth-child(3)>.container>.col{
+    height: 250px;
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+    background-clip: content-box;
+    overflow: hidden;
+}
+main>.row:nth-child(3)>.container>.col:hover img{
+    transform: scale(1.2);
+}
+main>.row:nth-child(3)>.container>.col:hover .topic{
+    background-color:yellow;
+}
+main>.row:nth-child(3)>.container>.col img{
+    display: block;
+    width: 100%;
+    transition: transform 500ms;
+}
+main>.row:nth-child(3)>.container>.col>.wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+main>.row:nth-child(3)>.container>.col>.wrapper>.overlay{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+}
+
+main>.row:nth-child(3)>.container>.col .topic{
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background-color: #525252;
+    color: white;
+}
+
+/* --------------------------------------------- */
+
+main>.row:last-child{
+    padding: 20px;
+}
+main>.row:last-child>.container>.col{
+    float: left;
+}
+
+main>.row:last-child>.container>.col:first-child,
+main>.row:last-child>.container>.col:last-child{
+    width: 25%;
+    background-color: red;
+    height: 100%;
+}
+main>.row:last-child>.container>.col:nth-child(2){
+    width: 50%;
+    background-color: green;
+    height: 100%;
+}
+
+/* -------------------------------------------- */
+
+#popup{
+    position: fixed;
+    left: 10px;
+    bottom: 40px;
+    width: 450px;
+    background-color: #8a8a8a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 1px #000000ab;
+}
+
+#close-wrapper{
+    position: absolute;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#close-wrapper:hover{
+    color: white
+}
+
+#popup{
+    padding-top: 35px;
+}
+
+#close-wrapper ion-icon{
+    vertical-align: sub;
+    padding-right: 5px;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+/* main>.row:nth-child(3)>.container>.col:first-child{
+   background-color: red;
+}
+main>.row:nth-child(3)>.container>.col:nth-child(2){
+    background-color: green;
+}
+main>.row:nth-child(3)>.container>.col:nth-child(3){
+    background-color: blue;
+}
+main>.row:nth-child(3)>.container>.col:last-child{
+    background-color: yellow;
+} */
