@@ -29,8 +29,8 @@ h2{
 }
 
 h3{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 h4{
@@ -56,7 +56,6 @@ h6{
 }
 
 #nav-row{
-    /* background-color: lightblue; */
     background-color: #231f20;
 }
 
@@ -85,7 +84,7 @@ h6{
 #app-row>.container>.wrapper{
     float: right;
     /* background-color: greenyellow; */
-    width: 70%;
+    /* width: 85%; */
     height: 100%;
 }
 
@@ -166,105 +165,109 @@ nav>li>a:hover{
     color: white;
 }
 
-
-#nav-row>div>nav li  {
-
-    float: left;   
+#nav-row nav li{
+    float: left;
 }
 
-
-#nav-row>div>nav li a{
+#nav-row nav li a{
     position: relative;
     display: inline-block;
-    color: white;
     padding: 15px;
+    color: white;
 }
 
-
-#nav-row>div>nav li a:hover{
-    background-color: #ff9d1e;
-    text-decoration: none;
-}
-
-#nav-row>div>nav li a:hover:after{
+#nav-row nav li a:hover::after{
     position: absolute;
     display: block;
     content: "";
-    border-top: 10px solid  #ff9d1e;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-top: 6px solid #ff9d1e;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
 }
 
-#misc-row div button{
+#nav-row nav li a:hover{
+    background-color: #ff9d1e;
+    color: black;
+    text-decoration: none;
+}
+
+#misc-row .btn{
     display: inline-block;
+    height: 40px;
+    background-color: #107ece;
     color: white;
-    border-bottom: 2px solid #107ece;
+    border-bottom: 2px solid #0f027b;
     padding: 0 10px;
-    cursor: pointer;
-    background-color: #3f4da1;
+    text-transform: uppercase;
     line-height: 40px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.8rem;
-
-
 }
-#misc-row div button:hover{
+
+#misc-row .btn:hover{
     background-color: #0865a9;
 }
+
 /* Footer */
 
 footer .row{
     background-color: #808285;
 }
+
 #copyright-row{
     background-color: #ffde00;
 }
+
 #copyright-row>.container{
     padding: 16px 0;
     color: #515254;
     font-size: 0.7rem;
     text-align: center;
 }
+
 footer>.row .col{
     float: left;
     width: 25%;
     height: 215px;
-    padding-top: 10px;
-
+    padding-top: 20px;
 }
-footer>.row .col h2{
+
+footer>.row .col h3{
     padding-bottom: 16px;
     color: white;
 }
+
 footer>.row .col nav li{
-    line-height: 1.4rem;
+    line-height: 1.2rem;
 }
+
 footer>.row .col nav li a{
     font-size: 0.75rem;
     color: white;
-    text-decoration: none;
-}
-footer>.row .col nav li a:hover{
-    color: #ff9d1e;
 }
 
-footer>.row .col:last-child p{
-    background-color: #515254;
-    color: white;
-    padding-bottom: 8px;
-    font-size: 0.75rem;
-    line-height: 1.1rem;
+footer>.row .col nav li a:hover{
+    color: #ff9d1e;
 }
 
 footer>.row .col:last-child{
     padding-left: 15px;
     background-color: #515254;
-    /* z-index: 1; */
+    position: relative;
+    z-index: 1;
 }
+
+footer>.row .col:last-child p{
+    padding-bottom: 8px;
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+}
+
 #tel-2{
     padding-left: 23px;
 }
@@ -274,7 +277,6 @@ footer>.row{
 }
 
 footer>.row::after{
-    /* z-index: -1; */
     display: block;
     content: "";
     background-color: #515254;
@@ -283,8 +285,8 @@ footer>.row::after{
     right: 0;
     top: 0;
     bottom: 0;
+    /* z-index: -1; */
 }
-
 
 /* aside */
 
@@ -359,6 +361,7 @@ aside a ion-icon{
 
 /* Main */
 
+main>.row:first-child,
 main>.row:first-child>.container{
     height: 90px;
 }
@@ -372,50 +375,42 @@ main>.row:first-child>.container>.col:first-child{
     /* background-color: red; */
     width: 75%;
     float: left;
+}
 
+main>.row:first-child>.container>.col:first-child>ul li{
+    width: 20%;
+    float: left;
+    text-align: right;
 }
 
 main>.row:first-child>.container>.col:first-child>ul li h3{
     font-size: 18px;
     padding: 10px 0;
-    text-align: left;
 }
 
+main>.row:first-child>.container>.col:first-child>ul li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
 
-
-main>.row:first-child>.container>.col:first-child>ul li{
-    width: 20%;
-     /* background-color: yellow;  */
-     /* border: 1px solid black;  */
-    float: left;
-    text-align: right;
+main>.row:first-child>.container>.col:first-child>ul li a:hover{
+    text-decoration: underline;
 }
 
 main>.row:first-child>.container>.col:first-child>ul li a img{
     border: 3px solid transparent;
-
 }
-
 
 main>.row:first-child>.container>.col:first-child>ul li a:hover img{
     border: 3px solid #ffde00;
-
-}
-
-main>.row:first-child>.container>.col:first-child>ul li a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-
-}
-
-main>.row:first-child>.container>.col:first-child>ul li a:hover{
-   text-decoration: underline
 }
 
 main>.row:first-child>.container>.col:first-child>ul li .country-code{
     display: block;
+    padding-top: 10px;
     text-align: center;
+    font-size: 0.7rem;
 }
 
 main>.row:first-child>.container>.col:last-child{
@@ -424,5 +419,67 @@ main>.row:first-child>.container>.col:last-child{
     float: right;
 }
 
+main>.row:nth-child(2)>.container>.col{
+    padding-top: 20px;
+    float: left;
+    /* height: 200px; */
+    
+}
 
+main>.row:nth-child(2)>.container>.col:first-child{
+    width: 75%;
+    background-color: #0865a9;
 
+}
+
+main>.row:nth-child(2)>.container>.col:last-child{
+    width: 25%;
+    background-color: red;
+    
+}
+
+main>.row:nth-child(2)>.container>.col:last-child svg{
+    height: 30px;
+}
+
+/* --------------------------------- */
+
+main>.row:nth-child(2)>.container>.col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li{
+    display: table;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    width: 100%;      
+    border-bottom: 1px solid #ccc;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover{
+    background-color: #525252;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover a,
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a{
+    display: table-row;
+    text-decoration: none;
+    color: black;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div{
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    /* border: 1px solid black; */
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
+    width: 90%;
+}
