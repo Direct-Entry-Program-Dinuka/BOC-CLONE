@@ -1,6 +1,7 @@
 @import url(css/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+
 *{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -422,27 +423,21 @@ main>.row:first-child>.container>.col:last-child{
 main>.row:nth-child(2)>.container>.col{
     padding-top: 20px;
     float: left;
-    /* height: 200px; */
-    
 }
 
 main>.row:nth-child(2)>.container>.col:first-child{
     width: 75%;
-    background-color: #0865a9;
-
+    /* background-color: red; */
 }
 
 main>.row:nth-child(2)>.container>.col:last-child{
     width: 25%;
-    /* background-color: red; */
-    
+    /* background-color: green; */
 }
 
 main>.row:nth-child(2)>.container>.col:last-child svg{
     height: 30px;
 }
-
-/* --------------------------------- */
 
 main>.row:nth-child(2)>.container>.col:last-child>ul{
     border-top: 1px solid #ececec;
@@ -482,4 +477,67 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div{
 
 main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
     width: 90%;
+}
+
+/* ------------------------------------------- */
+
+#slider{
+    padding: 10px 10px 0;
+    height: 388px;
+    overflow-y: hidden;
+}
+
+.slide{
+    position: relative;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size:contain;
+    background-position: center;
+    float: left;
+    width: 100%;
+}
+
+#slider-1{
+    background-image: url(https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg);
+}
+#slider-2{
+    background-image: url(https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg);
+}
+
+#slider-3{
+    background-image: url(https://boc.lk/image/data/Banner/SDA-2022-09.jpeg);
+}
+
+#slider-4{
+    background-image: url(https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg);
+}
+
+.slide .pre, .slide .next{
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(128, 130,133 , 0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.slide .pre:hover, .slide .next:hover{
+    background-color: rgba(128, 130,133 , 0.8);
+}
+
+.slide .pre{
+    left: 10px;
+}
+
+.slide .next{
+    right: 10px
+}
+
+.slide ion-icon{
+     color: white;
+     vertical-align: sub;
 }
